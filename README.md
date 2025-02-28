@@ -10,8 +10,7 @@ This script is a modification of the original [MolNetEnhancer](https://www.mdpi.
 - Create a molecular network using the [classical](https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/) or [feature-based](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) workflow through the Global Natural Products Social Molecular Networking (GNPS) platform
 - Perform in silico structure annotation using Network Annotation Propagation (NAP), DEREPLICATOR, or another tool of preference for in silico structure annotation
 
-Then execute the code in [MolNenEnhancerMod_NPC.R]
-(https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R) line by line.
+Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R) line by line.
 ### Disclaimer: Currently, the code only works with Feature Base Molecular Networking and NAP. DEREPLICATOR will be added soon.
  The only things that you need to replace are:
 
@@ -52,4 +51,5 @@ The graphML file is located inside of **gnps_molecular_network_graphml**
 
 ![Captura de pantalla 2025-02-27 173805](https://github.com/user-attachments/assets/9780676b-f250-4388-9c58-1fd30d434ebb)
 
-11. Import the **Molnethancer** CSV file in the network ![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
+11. Import the **Molnethancer** CSV file in the network
+![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
