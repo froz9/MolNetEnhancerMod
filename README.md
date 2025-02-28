@@ -1,5 +1,5 @@
 # MolNetEnhancerMod
-MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both NPClassifier and ClassyFire for robust molecular networking and detailed structural insights in metabolomics data.
+MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) and ClassyFire for robust molecular networking and detailed structural insights in metabolomics data.
 
 
 # For Map chemical class information using NPClassifier to mass spectral molecular networks
@@ -37,19 +37,44 @@ Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolN
 ![Captura de pantalla 2025-02-27 172333](https://github.com/user-attachments/assets/e7754806-2f9d-414d-bffa-369e52cc434c)
 
 9. Open Cytoscape and import the Molecular Network File (You can find the graphML file inside of the folder called GNPS_output_graphML that was generated after run the previous code)
-![Captura de pantalla 2025-02-27 172818](https://github.com/user-attachments/assets/c883467f-5192-4a13-ac63-65c250fd226d)
+    ![Captura de pantalla 2025-02-27 172818](https://github.com/user-attachments/assets/c883467f-5192-4a13-ac63-65c250fd226d)
 
-The graphML file is located inside of **gnps_molecular_network_graphml**
+   The graphML file is located inside of **gnps_molecular_network_graphml**
+   ![Captura de pantalla 2025-02-27 172847](https://github.com/user-attachments/assets/5f2e8c78-7ad8-4064-9d12-a7e0bd666b52)
 
-![Captura de pantalla 2025-02-27 172847](https://github.com/user-attachments/assets/5f2e8c78-7ad8-4064-9d12-a7e0bd666b52)
+   ![Captura de pantalla 2025-02-27 173349](https://github.com/user-attachments/assets/c22f97a2-0d9c-410a-b922-68b0419a0ba8)
 
-![Captura de pantalla 2025-02-27 173349](https://github.com/user-attachments/assets/c22f97a2-0d9c-410a-b922-68b0419a0ba8)
+   ![Captura de pantalla 2025-02-27 173428](https://github.com/user-attachments/assets/2b3753d2-4a0f-4660-9fad-982e70f25719)
 
-![Captura de pantalla 2025-02-27 173428](https://github.com/user-attachments/assets/2b3753d2-4a0f-4660-9fad-982e70f25719)
- 
 10. After loaded, the graphML file will look like this:
+    ![Captura de pantalla 2025-02-27 173805](https://github.com/user-attachments/assets/9780676b-f250-4388-9c58-1fd30d434ebb)
 
-![Captura de pantalla 2025-02-27 173805](https://github.com/user-attachments/assets/9780676b-f250-4388-9c58-1fd30d434ebb)
+11. Import the **Molnethancer** CSV file into the network
+    ![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
 
-11. Import the **Molnethancer** CSV file in the network
-![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
+    ![Captura de pantalla 2025-02-27 194217](https://github.com/user-attachments/assets/5578bdb6-ceeb-4521-ac90-bfb9a3d9c931)
+
+    **cluster.index** need to have the key
+
+    ![Captura de pantalla 2025-02-27 194327](https://github.com/user-attachments/assets/a62ffc29-abb3-4b62-bbc2-93c50912fe9c)
+
+    Then press **Ok**
+
+12. Navigate to Style -> Fill Color
+
+    ![Captura de pantalla 2025-02-27 194531](https://github.com/user-attachments/assets/82ee7554-e8b6-4f2f-9a83-98f082190a56)
+
+    In **Column**, select the Classification level that you need (Pathway, Superclass, or Class)
+    For the example, I chose **NPC_Pathway_Consensus**, in **Mapping Type** select **Discrete Mapping**
+    The NPC Pathways will be displayed
+
+    ![Captura de pantalla 2025-02-27 195019](https://github.com/user-attachments/assets/202a9917-dcae-4575-8ea4-0f3da3e809c3)
+
+13. Select the colors that you want. For example, I right-clicked the in the row next to the **Alkaloids** and inside **Mapping Values Generator**, I selected **Rainbow**
+
+    ![Captura de pantalla 2025-02-27 195433](https://github.com/user-attachments/assets/70808a75-c74c-4b78-899f-002cddf74746)
+
+14. Your network enhanced with [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) is ready!
+
+    ![Captura de pantalla 2025-02-27 195751](https://github.com/user-attachments/assets/d6f22299-4c3f-410e-a12e-acf43aa859ce)
+
