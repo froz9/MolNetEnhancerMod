@@ -47,7 +47,7 @@ The graphML file is located inside of **gnps_molecular_network_graphml**
 
 ![Captura de pantalla 2025-02-27 173428](https://github.com/user-attachments/assets/2b3753d2-4a0f-4660-9fad-982e70f25719)
  
- 10. After loaded, the graphML file will look like this:
+10. After loaded, the graphML file will look like this:
 
 ![Captura de pantalla 2025-02-27 173805](https://github.com/user-attachments/assets/9780676b-f250-4388-9c58-1fd30d434ebb)
 
