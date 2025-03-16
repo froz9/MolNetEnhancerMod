@@ -4,7 +4,7 @@ MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a
 ## Select what you need
 ### [A. For Map chemical class information using NPClassifier to mass spectral molecular networks](https://github.com/froz9/MolNetEnhancerMod/tree/main?tab=readme-ov-file#a-for-map-chemical-class-information-using-npclassifier-to-mass-spectral-molecular-networks-1)
 
-### [B. For Map chemical class information using Classyfire to mass spectral molecular networks](b._for_map_chemical_class_information_using_classyfire_to_mass_spectral_molecular_networks)
+### [B. For Map chemical class information using Classyfire to mass spectral molecular networks](https://github.com/froz9/MolNetEnhancerMod/tree/main?tab=readme-ov-file#b-for-map-chemical-class-information-using-classyfire-to-mass-spectral-molecular-networks-1)
 
 ## A. For Map chemical class information using NPClassifier to mass spectral molecular networks
 This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
