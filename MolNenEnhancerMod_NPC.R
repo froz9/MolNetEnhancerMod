@@ -58,6 +58,8 @@ if ('clusterinfo_summary' %in% list.files('GNPS_output_graphML/') & 'DB_result' 
 nap <- read.csv(paste0("http://proteomics2.ucsd.edu/ProteoSAFe/DownloadResultFile?task=", nap_id,
                        "&block=main&file=final_out/node_attributes_table.tsv"), 
                 sep = "\t", check.names = F)
+# Split the SMILES by comma, take the first element, and trim whitespace
+nap$ConsensusSMILES <- sapply(strsplit(nap$ConsensusSMILES, ",\\s*"), function(x) trimws(x[1]))
 
 # Read the GNPS library file containing additional annotations.
 gnpslib <- read.csv(gnpslibfile, sep = '\t', check.names = F)
