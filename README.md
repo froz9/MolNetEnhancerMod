@@ -107,7 +107,7 @@ The only things that you need to replace are:
 
 3. Replace the aforementioned ID's in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
 
-4. Download the [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R)
+4. Download the [MolNenEnhancerMod_Classyfire.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolnetEnhancerMod_Classyfire.R)
 
 ![Captura de pantalla 2025-02-27 171412](https://github.com/user-attachments/assets/5e10169b-b663-4bd7-9ab0-e302032ed3d0)
 
