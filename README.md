@@ -1,17 +1,21 @@
 # MolNetEnhancerMod
 MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) and ClassyFire for robust molecular networking and detailed structural insights in metabolomics data.
 
+## Select what you need
+### [A. For Map chemical class information using NPClassifier to mass spectral molecular networks](a._for_map_chemical_class_information_using_npclassifier_to_mass_spectral_molecular_networks)
 
-# For Map chemical class information using NPClassifier to mass spectral molecular networks
+### B. [For Map chemical class information using Classyfire to mass spectral molecular networks](b._for_map_chemical_class_information_using_classyfire_to_mass_spectral_molecular_networks)
+
+## A. For Map chemical class information using NPClassifier to mass spectral molecular networks
 This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
 
-## To map chemical class information to a mass spectral molecular network, you need to:
+### To map chemical class information to a mass spectral molecular network, you need to:
 
 - Create a molecular network using the [classical](https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/) or [feature-based](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) workflow through the Global Natural Products Social Molecular Networking (GNPS) platform
 - Perform in silico structure annotation using Network Annotation Propagation (NAP), DEREPLICATOR, or another tool of preference for in silico structure annotation
 
 Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R) line by line.
-### Disclaimer: Currently, the code only works with Feature Base Molecular Networking and NAP. DEREPLICATOR will be added soon.
+#### Disclaimer: Currently, the code only works with Feature Base Molecular Networking and NAP. DEREPLICATOR will be added soon.
  The only things that you need to replace are:
 
 1. Your GNPS Job ID
@@ -86,3 +90,5 @@ Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolN
 
     ![Captura de pantalla 2025-02-27 195751](https://github.com/user-attachments/assets/d6f22299-4c3f-410e-a12e-acf43aa859ce)
 
+## B. For Map chemical class information using Classyfire to mass spectral molecular networks
+This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
