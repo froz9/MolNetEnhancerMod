@@ -6,16 +6,18 @@ MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a
 
 ### [B. For Map chemical class information using Classyfire to mass spectral molecular networks](https://github.com/froz9/MolNetEnhancerMod/tree/main?tab=readme-ov-file#b-for-map-chemical-class-information-using-classyfire-to-mass-spectral-molecular-networks-1)
 
-## A. For Map chemical class information using NPClassifier to mass spectral molecular networks
-This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
-
-### To map chemical class information to a mass spectral molecular network, you need to:
+## To map chemical class information to a mass spectral molecular network, you need to:
 
 - Create a molecular network using the [classical](https://ccms-ucsd.github.io/GNPSDocumentation/quickstart/) or [feature-based](https://ccms-ucsd.github.io/GNPSDocumentation/featurebasedmolecularnetworking/) workflow through the Global Natural Products Social Molecular Networking (GNPS) platform
 - Perform in silico structure annotation using Network Annotation Propagation (NAP), DEREPLICATOR, or another tool of preference for in silico structure annotation
 
 Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R) line by line.
-#### Disclaimer: Currently, the code only works with Feature Base Molecular Networking and NAP. DEREPLICATOR will be added soon.
+### Disclaimer: Currently, the code only works with Feature Base Molecular Networking and NAP. DEREPLICATOR will be added soon.
+ 
+
+## A. For Map chemical class information using NPClassifier to mass spectral molecular networks
+This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
+ 
  The only things that you need to replace are:
 
 1. Your GNPS Job ID
@@ -91,4 +93,30 @@ Then execute the code in [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolN
     ![Captura de pantalla 2025-02-27 195751](https://github.com/user-attachments/assets/d6f22299-4c3f-410e-a12e-acf43aa859ce)
 
 ## B. For Map chemical class information using Classyfire to mass spectral molecular networks
-This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399).
+This script is a modification of the original [MolNetEnhancer](https://www.mdpi.com/2218-1989/9/7/144) workflow published by Madeleine Ernst. This version assigns chemical class annotations using [Classyfire](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-016-0174-y).
+
+The only things that you need to replace are:
+
+1. Your GNPS Job ID
+
+![image](https://github.com/user-attachments/assets/85378ed6-fabc-405d-8d0f-473970502cb4)
+
+2. Your NAP Job ID
+
+![image](https://github.com/user-attachments/assets/c673eaca-ccc3-4ab2-8a89-902cc8efb775)
+
+3. Replace the aforementioned ID's in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
+
+4. Download the [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R)
+
+![Captura de pantalla 2025-02-27 171412](https://github.com/user-attachments/assets/5e10169b-b663-4bd7-9ab0-e302032ed3d0)
+
+5. Open it in your preferred R development environment, in this case, I use [RStudio](https://posit.co/downloads/) 
+
+![Captura de pantalla 2025-02-27 171748](https://github.com/user-attachments/assets/07692410-39f2-4b0d-a484-84d21fee0319)
+
+6. Replace the ID's from your work in the corresponding place
+
+![Captura de pantalla 2025-02-27 172036](https://github.com/user-attachments/assets/c998e20e-b714-4eab-ae30-fe2968aa7c75)
+
+7. Run the code as usual
