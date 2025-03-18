@@ -2,12 +2,12 @@
 # Modified MolNetEnhancer Script with NPClassifier Integration
 # -------------------------------------------------------------------------------
 # This script is a modification of the original MolNetEnhancer workflow published 
-# by Madeleine Ernst. In this version, NPClassifier (via the NPCTable function) 
+# by Madeleine Ernst. In this version, Classyfire
 # is used to assign chemical class annotations.
 #
-# The code downloads and processes GNPS network data, merges it with additional 
+# The code downloads and processes GNPS network data and merges it with additional 
 # annotation information, and then computes consensus chemical classes based on 
-# NPClassifier results.
+# Classyfire results.
 ###############################################################################
 
 # Load required libraries:
@@ -96,15 +96,15 @@ FinalTable_molnetenhancer <- FinalTable_molnetenhancer %>%
 # Replace any remaining empty cells with NA.
 FinalTable_molnetenhancer[FinalTable_molnetenhancer == ""] <- NA
 
-# Filter to create a data frame with SMILES strings for NPClassifier analysis.
+# Filter to create a data frame with SMILES strings for Classyfire analysis.
 smiles_Classifyre <- FinalTable_molnetenhancer %>% 
     select(cluster.index, SMILES_FINAL) %>% 
     filter(!is.na(SMILES_FINAL)) %>%
     rename(smiles = SMILES_FINAL)
 
-# smiles_Classifyre has a more rows than the required by classyfire web
-# split the file in two parts
-# Define batch size
+# smiles_Classifyre has more rows than required by the classyfire web
+# split the file into two parts
+# Define the batch size
 BATCH_SIZE <- 999
 
 # Split into non-overlapping chunks
@@ -153,7 +153,7 @@ molnetenhancer_df <- Classyfire_result %>%
     right_join(netfile_data, by = "cluster.index")
 
 
-# Function to retrieve the most predominant chemical class per componentindex (no changes needed here)
+# Function to retrieve the most predominant chemical class per componentindex
 highestscore <- function(df, chem_level_column) {
   df %>%
     filter(
@@ -182,7 +182,7 @@ define_consensus_classes <- function(data) {
     stop("Input data must contain the columns: componentindex, Superclass, Class, and Subclass.")
   }
   
-  # Calculate consensus for each level (no changes needed here)
+  # Calculate consensus for each level
   superclass_consensus <- highestscore(data, "Superclass")
   class_consensus <- highestscore(data, "Class")
   subclass_consensus <- highestscore(data, "Subclass")
