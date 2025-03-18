@@ -70,7 +70,7 @@ netfile <- read.csv(netfile, sep = '\t', check.names = F)
 
 # Prepare Data for Merging
 ###############################################################################
-# Select only the required columns from the network file and rename for clarity.
+# Select only the required columns from the network file and rename them for clarity.
 netfile_data <- netfile %>% 
     select(componentindex, `cluster index`) %>% 
     rename(cluster.index = `cluster index`)
