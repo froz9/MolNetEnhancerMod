@@ -5,7 +5,7 @@
 # by Madeleine Ernst. In this version, NPClassifier (via the NPCTable function) 
 # is used to assign chemical class annotations.
 #
-# The code downloads and processes GNPS network data, merges it with additional 
+# The code downloads and processes GNPS network data and merges it with additional 
 # annotation information, and then computes consensus chemical classes based on 
 # NPClassifier results.
 ###############################################################################
@@ -91,7 +91,7 @@ FinalTable_molnetenhancer <- FinalTable_molnetenhancer %>%
                             left_join(nap, by = "cluster.index")
 
 # Create a new column 'SMILES_FINAL' that preferentially uses 'Smiles.x' unless missing,
-# in which case it falls back on 'ConsensusSMILES'.
+# in which case it falls back on 'ConsensusSMILES.'
 FinalTable_molnetenhancer <- FinalTable_molnetenhancer %>% 
   mutate(SMILES_FINAL = case_when(
     is.na(Smiles.x) & !is.na(ConsensusSMILES) ~ ConsensusSMILES,
@@ -111,7 +111,7 @@ smiles_NPC <- FinalTable_molnetenhancer %>%
 ###############################################################################
 # NPClassifier Analysis using NPCTable
 ###############################################################################
-# Apply the NPCTable function (from the NPClassifier integration in chemodiv)
+# Apply the NPCTable function
 # to annotate the SMILES strings.
 NPCResult <- NPCTable(smiles_NPC)  
 
@@ -134,7 +134,7 @@ molnetenhancer_df <- NPCResult %>%
 # The following functions calculate the consensus chemical class for each component
 # based on the NPClassifier annotations.
 
-# Function to determine the most predominant chemical class (or level) within each component.
+# Function to determine each component's most predominant chemical class (or level).
 highestscore <- function(df, chem_level_column) {
   df %>%
     # Filter out invalid or missing chemical level entries.
@@ -181,7 +181,7 @@ define_consensus_classes <- function(data) {
     rename(NPC_Class_Consensus = consensus_class, NPC_Class_Score = score) %>%
     group_by(componentindex) %>%
     mutate(
-      # For valid components (componentindex not equal to -1), propagate the consensus annotation.
+      # Propagate the consensus annotation for valid components (componentindex not equal to -1).
       NPC_Pathway_Consensus = ifelse(componentindex != -1, NPC_Pathway_Consensus[1], NPC_Pathway),
       NPC_Superclass_Consensus = ifelse(componentindex != -1, NPC_Superclass_Consensus[1], NPC_Superclass),
       NPC_Class_Consensus = ifelse(componentindex != -1, NPC_Class_Consensus[1], NPC_Class)
