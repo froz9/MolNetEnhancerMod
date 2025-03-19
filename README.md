@@ -28,7 +28,7 @@ This script is a modification of the original [MolNetEnhancer](https://www.mdpi.
 
 ![image](https://github.com/user-attachments/assets/c673eaca-ccc3-4ab2-8a89-902cc8efb775)
 
-3. Replace the aforementioned ID's in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
+3. Replace the aforementioned IDs in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
 
 4. Download the [MolNenEnhancerMod_NPC.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolNenEnhancerMod_NPC.R)
 
@@ -38,7 +38,7 @@ This script is a modification of the original [MolNetEnhancer](https://www.mdpi.
 
 ![Captura de pantalla 2025-02-27 171748](https://github.com/user-attachments/assets/07692410-39f2-4b0d-a484-84d21fee0319)
 
-6. Replace the ID's from your work in the corresponding place
+6. Replace the IDs from your work in the corresponding place
 
 ![Captura de pantalla 2025-02-27 172036](https://github.com/user-attachments/assets/c998e20e-b714-4eab-ae30-fe2968aa7c75)
 
@@ -84,7 +84,7 @@ This script is a modification of the original [MolNetEnhancer](https://www.mdpi.
 
     ![Captura de pantalla 2025-02-27 195019](https://github.com/user-attachments/assets/202a9917-dcae-4575-8ea4-0f3da3e809c3)
 
-15. Select the colors that you want. For example, I right-clicked the in the row next to the **Alkaloids** and inside **Mapping Values Generator**, I selected **Rainbow**
+15. Select the colors that you want. For example, I right-clicked in the row next to the **Alkaloids**, and inside **Mapping Values Generator**, I selected **Rainbow**
 
     ![Captura de pantalla 2025-02-27 195433](https://github.com/user-attachments/assets/70808a75-c74c-4b78-899f-002cddf74746)
 
@@ -105,7 +105,7 @@ The only things that you need to replace are:
 
 ![image](https://github.com/user-attachments/assets/c673eaca-ccc3-4ab2-8a89-902cc8efb775)
 
-3. Replace the aforementioned ID's in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
+3. Replace the aforementioned IDs in the R script (To replicate results storage in [Madeleine GitHub](https://github.com/madeleineernst/RMolNetEnhancer/blob/master/Example_notebooks/ChemicalClasses_2_Network_FeatureBased.ipynb) I will use the same data)
 
 4. Download the [MolNenEnhancerMod_Classyfire.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolnetEnhancerMod_Classyfire.R)
 
