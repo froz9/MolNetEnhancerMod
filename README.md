@@ -109,14 +109,34 @@ The only things that you need to replace are:
 
 4. Download the [MolNenEnhancerMod_Classyfire.R](https://github.com/froz9/MolNetEnhancerMod/blob/main/MolnetEnhancerMod_Classyfire.R)
 
-![Captura de pantalla 2025-02-27 171412](https://github.com/user-attachments/assets/5e10169b-b663-4bd7-9ab0-e302032ed3d0)
+![Captura de pantalla 2025-03-24 140035](https://github.com/user-attachments/assets/172bed88-fbd6-4e14-87d0-7a91db50dd68)
 
-5. Open it in your preferred R development environment, in this case, I use [RStudio](https://posit.co/downloads/) 
 
-![Captura de pantalla 2025-02-27 171748](https://github.com/user-attachments/assets/07692410-39f2-4b0d-a484-84d21fee0319)
+5. Open it in your preferred R development environment; in this case, I use [RStudio](https://posit.co/downloads/) 
+
+![Captura de pantalla 2025-03-24 140239](https://github.com/user-attachments/assets/cdef1a8a-4e9e-49c9-9f07-4473d1229d48)
 
 6. Replace the ID's from your work in the corresponding place
 
-![Captura de pantalla 2025-02-27 172036](https://github.com/user-attachments/assets/c998e20e-b714-4eab-ae30-fe2968aa7c75)
+![Captura de pantalla 2025-03-24 140345](https://github.com/user-attachments/assets/be9a9609-c34e-412c-b714-2a8ad623e209)
 
-7. Run the code as usual
+7. Run the code as usual until line #113
+
+8. Line 113 will generate TSV files in your working directory. Each run in the Classyfire web app needs less than 1000 features, so if you have more than 1000 features, the code will divide the features into multiple TSV files containing less than 1000 per file
+
+![Captura de pantalla 2025-03-24 141340](https://github.com/user-attachments/assets/b011fde4-af18-4ab1-9c3c-0e410ad1508c)
+
+9. After running line 113. You must stop and find the TSV files. For this example, two TSV files were generated
+
+![Captura de pantalla 2025-03-24 141536](https://github.com/user-attachments/assets/bfea9bd6-2ab1-4820-923c-8bd403197010)
+
+10. You need to upload each TSV file individually to the [Classyfire web app] (http://classyfire.wishartlab.com/)
+
+![Captura de pantalla 2025-03-24 141832](https://github.com/user-attachments/assets/2b6f3d86-fc10-4564-a38f-0638f33f88dc)
+
+
+11. 
+
+
+
+ 
