@@ -163,11 +163,11 @@ The only things that you need to replace are:
 
     ![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
 
-    ![Captura de pantalla 2025-02-27 194217](https://github.com/user-attachments/assets/5578bdb6-ceeb-4521-ac90-bfb9a3d9c931)
+    ![Captura de pantalla 2025-05-28 122040](https://github.com/user-attachments/assets/b7278e01-d2c2-445d-88b2-f4d0b448b507)
 
     **cluster.index** need to have the key
 
-    ![Captura de pantalla 2025-02-27 194327](https://github.com/user-attachments/assets/a62ffc29-abb3-4b62-bbc2-93c50912fe9c)
+    ![Captura de pantalla 2025-05-28 122209](https://github.com/user-attachments/assets/2ffccf3b-02c1-4d14-bfa9-cd2c8d9d148c)
 
     Then press **Ok**
 
@@ -175,10 +175,17 @@ The only things that you need to replace are:
 
     ![Captura de pantalla 2025-02-27 194531](https://github.com/user-attachments/assets/82ee7554-e8b6-4f2f-9a83-98f082190a56)
 
-    In **Column**, select the Classification level that you need (Pathway, Superclass, or Class)
-    For the example, I chose **NPC_Pathway_Consensus**, in **Mapping Type** select **Discrete Mapping**
-    The NPC Pathways will be displayed
+    In **Column**, select the Classification level that you need (Superslass, Class, or Subclass)
+    For the example, I chose **Superclass_Consensus**, in **Mapping Type** select **Discrete Mapping**
+    The Superclasses will be displayed
 
-    ![Captura de pantalla 2025-02-27 195019](https://github.com/user-attachments/assets/202a9917-dcae-4575-8ea4-0f3da3e809c3)
+    ![Captura de pantalla 2025-05-28 122404](https://github.com/user-attachments/assets/3043474b-5ef0-42e8-a5c9-c57654e5beb3)
 
- 
+18. Select the colors that you want. For example, I right-clicked in the row next to the **Alkaloids and derivatives**, and inside **Mapping Values Generator**, I selected **Rainbow**
+
+    ![Captura de pantalla 2025-05-28 122759](https://github.com/user-attachments/assets/592bea1a-d023-4741-a4b7-8f951e391b7d)
+
+19. Your network enhanced with [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) is ready!
+
+    ![Captura de pantalla 2025-05-28 122835](https://github.com/user-attachments/assets/5cd7a9f2-8fd4-40e9-93d6-cc907f54d9b5)
+
