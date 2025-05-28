@@ -44,7 +44,7 @@ This script is a modification of the original [MolNetEnhancer](https://www.mdpi.
 
 7. Run the code as usual
 
-8. After finished, it will generate a CSV file called **Molnetenhancer** in your working directory
+8. After finishing, it will generate a CSV file called **Molnetenhancer** in your working directory
 
 ![Captura de pantalla 2025-02-27 172333](https://github.com/user-attachments/assets/e7754806-2f9d-414d-bffa-369e52cc434c)
 
@@ -116,13 +116,13 @@ The only things that you need to replace are:
 
 ![Captura de pantalla 2025-03-24 140239](https://github.com/user-attachments/assets/cdef1a8a-4e9e-49c9-9f07-4473d1229d48)
 
-6. Replace the ID's from your work in the corresponding place
+6. Replace the IDs from your work in the corresponding place
 
 ![Captura de pantalla 2025-03-24 140345](https://github.com/user-attachments/assets/be9a9609-c34e-412c-b714-2a8ad623e209)
 
 7. Run the code as usual until line #113
 
-8. Line 113 will generate TSV files in your working directory. Each run in the Classyfire web app needs less than 1000 features, so if you have more than 1000 features, the code will divide the features into multiple TSV files containing less than 1000 per file
+8. Line 113 will generate TSV files in your working directory. Each run in the Classyfire web app needs fewer than 1000 features, so if you have more than 1000 features, the code will divide the features into multiple TSV files containing fewer than 1000 features per file
 
 ![Captura de pantalla 2025-03-24 141340](https://github.com/user-attachments/assets/b011fde4-af18-4ab1-9c3c-0e410ad1508c)
 
@@ -135,8 +135,50 @@ The only things that you need to replace are:
 ![Captura de pantalla 2025-03-24 141832](https://github.com/user-attachments/assets/2b6f3d86-fc10-4564-a38f-0638f33f88dc)
 
 
-11. 
+11. After running each file individually on the Classyfire web. You need to download the output files in SDF format and save them in the working directory.
 
+![Captura de pantalla 2025-05-28 121317](https://github.com/user-attachments/assets/379ba774-0d15-4011-8f4a-634c1ca5a740)
 
+12. Continue running the script (line 125).
+
+13. After finishing, it will generate a CSV file called **Molnetenhancer** in your working directory
+
+![Captura de pantalla 2025-02-27 172333](https://github.com/user-attachments/assets/e7754806-2f9d-414d-bffa-369e52cc434c)
+
+14. Open Cytoscape and import the Molecular Network File (You can find the graphML file inside of the folder called GNPS_output_graphML that was generated after run the previous code)
+   ![Captura de pantalla 2025-02-27 172818](https://github.com/user-attachments/assets/c883467f-5192-4a13-ac63-65c250fd226d)
+
+   The graphML file is located inside of **gnps_molecular_network_graphml**
+   ![Captura de pantalla 2025-02-27 172847](https://github.com/user-attachments/assets/5f2e8c78-7ad8-4064-9d12-a7e0bd666b52)
+
+   ![Captura de pantalla 2025-02-27 173349](https://github.com/user-attachments/assets/c22f97a2-0d9c-410a-b922-68b0419a0ba8)
+
+   ![Captura de pantalla 2025-02-27 173428](https://github.com/user-attachments/assets/2b3753d2-4a0f-4660-9fad-982e70f25719)
+
+15. After loaded, the graphML file will look like this:
+
+     ![Captura de pantalla 2025-02-27 173805](https://github.com/user-attachments/assets/9780676b-f250-4388-9c58-1fd30d434ebb)
+
+16. Import the **Molnethancer** CSV file into the network
+
+    ![Captura de pantalla 2025-02-27 173945](https://github.com/user-attachments/assets/4296dfd0-8adf-44ea-acf3-fabfac93b0a4)
+
+    ![Captura de pantalla 2025-02-27 194217](https://github.com/user-attachments/assets/5578bdb6-ceeb-4521-ac90-bfb9a3d9c931)
+
+    **cluster.index** need to have the key
+
+    ![Captura de pantalla 2025-02-27 194327](https://github.com/user-attachments/assets/a62ffc29-abb3-4b62-bbc2-93c50912fe9c)
+
+    Then press **Ok**
+
+17. Navigate to Style -> Fill Color
+
+    ![Captura de pantalla 2025-02-27 194531](https://github.com/user-attachments/assets/82ee7554-e8b6-4f2f-9a83-98f082190a56)
+
+    In **Column**, select the Classification level that you need (Pathway, Superclass, or Class)
+    For the example, I chose **NPC_Pathway_Consensus**, in **Mapping Type** select **Discrete Mapping**
+    The NPC Pathways will be displayed
+
+    ![Captura de pantalla 2025-02-27 195019](https://github.com/user-attachments/assets/202a9917-dcae-4575-8ea4-0f3da3e809c3)
 
  
