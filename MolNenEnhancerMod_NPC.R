@@ -116,7 +116,7 @@ smiles_NPC <- FinalTable_molnetenhancer %>%
 NPCResult <- NPCTable(smiles_NPC)  
 
 # Select relevant columns from the NPClassifier result.
-NPCResult <- NPCResult %>% select(1, 2, 3, 5, 7) 
+NPCResult <- NPCResult %>% select(1, 2, pathway, superclass, class) 
 
 # Merge NPClassifier results with the original network data and rename columns to 
 # indicate NPClassifier annotations.
