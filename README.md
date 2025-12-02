@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/froz9/MolNetEnhancerMod.svg)](https://GitHub.com/froz9/MolNetEnhancerMod/issues/)
 
 # MolNetEnhancerMod
-MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) and ClassyFire for robust molecular networking and detailed structural insights in metabolomics data.
+MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) and [ClassyFire] (http://classyfire.wishartlab.com/) for robust molecular networking and detailed structural insights in metabolomics data.
 
 ## Select what you need
 ### [A. For Map chemical class information using NPClassifier to mass spectral molecular networks](https://github.com/froz9/MolNetEnhancerMod/tree/main?tab=readme-ov-file#a-for-map-chemical-class-information-using-npclassifier-to-mass-spectral-molecular-networks-1)
