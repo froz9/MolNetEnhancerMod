@@ -1,3 +1,8 @@
+[![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](https://opensource.org/licenses/MIt)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/froz9/MolNetEnhancerMod/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/froz9/MolNetEnhancerMod.svg)](https://GitHub.com/froz9/MolNetEnhancerMod/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/froz9/MolNetEnhancerMod.svg)](https://GitHub.com/froz9/MolNetEnhancerMod/issues/)
+
 # MolNetEnhancerMod
 MolNetEnhancerMod is an alternative to the non-working MolNetEnhancer. It uses a modified approximation to retrieve SMILES classification, supporting both [NPClassifier](https://pubs.acs.org/doi/10.1021/acs.jnatprod.1c00399) and ClassyFire for robust molecular networking and detailed structural insights in metabolomics data.
 
